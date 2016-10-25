@@ -47,6 +47,14 @@ module.exports.routes = {
   'GET /posts': {
     controller: 'BlogController',
     action: 'index'
+  },
+  'GET /posts/new': {
+    controller: 'BlogController',
+    action: 'new'
+  },
+  'POST /posts': {
+    controller:'BlogController',
+    action: 'create'
   }
 
   /***************************************************************************

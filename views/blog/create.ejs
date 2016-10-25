@@ -1,1 +1,10 @@
-<h1>Create</h1>
+<h1><%- title %></h1>
+
+<form action="/posts" method="post">
+	<input type="text" name="title" placeholder="Title"/>
+	<input type="text" name="description" placeholder="Description"/>
+
+	<textarea cols="30" name="text"></textarea>
+
+	<input type="submit" value="Send"/>
+</form>

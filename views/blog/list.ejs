@@ -1,3 +1,11 @@
 <h1>List</h1>
 
-<%- data %>
+<ul>
+
+<% data.forEach(function(value, key) { %>
+	<li><%- value.title %></li>	
+	<li><%- value.description %></li>	
+	<li><%- value.text %></li>	
+<% }) %>
+
+</ul>
